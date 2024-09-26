@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags -->
+    <meta name="title" content="Encriptador">
+    <meta name="description" content="Encripta mensajes forma segura">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo2-co.png" type="image/x-icon">
+
+    <!--Preconect-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/images/logo2-co.png" loading="lazy" alt="logo">
+        <div class="data">
+            <h1 data-value="ENCRIPTADOR">ENCRIPTADOR</h1>
+        </div>
+    </header>
+    
+    <section id="encryptor" class="encryptor">
+        <div class="content-section" >
+        <section class="text__and__buttons">
+            <div>
+                <textarea id="text__area" cols="41" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <div class="information__and__buttons">
+                <div class="information">
+                    <img src="assets/images/exclamation-circle.png" loading="lazy" alt="Exclamation circle icon">
+                    <p>Encriptador no permite ñ, acentos y caracteres especiales.</p>
+                </div>
+    
+                <div class="buttons">
+                    <button onclick="encrypt()" class="buttons__encrypt">Encriptar</button>
+                    <button onclick="decrypt()" class="buttons__decrypt">Descifrar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="box__result">
+            <div class="message">
+                <div id="message__content">
+                    <div class="glitch">
+                        <img src="assets/images/logo-co.png" loading="lazy" alt="Decodificador cuadro">
+                    </div>
+                    <div class="message__text">
+                        <h1>Aún no se encuentran mensajes</h1>
+                        <p>Ingrese el texto que desea Encriptar o Descifrar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>
+              &copy; 2024 <a href="">Encriptador v1.0.0 </a> By Emanuel Reyes  ⌘ | Connect whit me
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
